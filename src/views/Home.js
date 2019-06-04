@@ -8,14 +8,13 @@ import Container from '../components/Container';
 import BackgroundImage from '../components/BackgroundImage';
 import TextContainer from '../components/TextContainer';
 import ImageContainer from '../components/ImageContainer';
-
+import BG from './bg.jpg'
 
 
 
 
 const IntroContainer = styled(Container)`
     min-height: 100vh;
-    margin-bottom: 25vh;
 
 `
 
@@ -45,8 +44,11 @@ const ProjectList = array.map( (item, i) => {
 })
 	return (
 			<div>
+				            <BackgroundImage backgroundImage={BG}/>
+
 				<IntroContainer>
 					<TextContainer 
+						textColor="white"
 						name="Startup Factory"
 						ingress=" Lean Startup Incubator for both, investors and entrepreneurs."	
 						body="We bring together great innovators with bright ideas and investors with decades of experience from the field. "

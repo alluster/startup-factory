@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from "react-router-dom";
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 const Container = styled.div`
@@ -13,7 +13,6 @@ const Container = styled.div`
 
 const H1 = styled.h1 `
     line-height: 80px;
-    color: ${props => props.textColor}
 
 `
 
@@ -28,10 +27,10 @@ const P = styled.p `
 const TextContainer = (props) =>  {
     return (
         <Container>
-                <H1>{props.name}</H1>
+                <H1 style={{color: `${props.textColor}`}}>{props.name}</H1>
                 <br/>
-                <H4>{props.ingress}</H4>
-                <P>{props.body}</P>
+                <H4 style={{color: `${props.textColor}`}}>{props.ingress}</H4>
+                <P style={{color: `${props.textColor}`}}>{props.body}</P>
         </Container>
       
     );

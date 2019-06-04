@@ -13,7 +13,6 @@ import ImageContainer from '../ImageContainer';
 
 const ProjectContainer = styled(Container)`
     min-height: 100vh;
-    margin-bottom: 25vh;
 
 `
 

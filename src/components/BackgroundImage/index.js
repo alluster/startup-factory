@@ -2,25 +2,27 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax, Background } from 'react-parallax';
 
 const Content = styled.div`
     width: 100%;
-    max-height: 100vh;
     position: absolute;
     z-index: -10;
 
 `
-const IMG = styled.div`
-    height : 100vh
-`
+
 
 
 const BackgroundImage = (props) =>  {
     return (
         <Content>
-        <Parallax y={[-10, 20]} tagOuter="figure">
-            <img className="bg-image"src={props.backgroundImage } alt="image"/>
+         <Parallax
+            bgImage={`${props.backgroundImage}`}
+            bgImageAlt="the cat"
+            strength={1000}
+        >
+           
+            <div style={{ height: '100vh' }} />
         </Parallax>
 
         </Content>

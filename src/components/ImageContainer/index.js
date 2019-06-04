@@ -10,7 +10,7 @@ const Container = styled.div`
 `
 const IMG = styled.img`
     max-height: 80vh;
-    text-align: right
+    ailign-self: right
 
 
 `
