@@ -2,9 +2,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import styled, { css } from 'styled-components';
+import Container from '../Container';
 
-
-const Container = styled.div`
+const Content = styled(Container)`
     margin: 0;
     position: absolute;            
     top: 50%;                      
@@ -27,13 +27,13 @@ const P = styled.p `
 
 const TextContainer = (props) =>  {
     return (
-        <Container>
+        <Content>
                 {props.children}
                 <H1 style={{color: `${props.textColor}`}}>{props.name}</H1>
                 <br/>
                 <H4 style={{color: `${props.textColor}`}}>{props.ingress}</H4>
                 <P style={{color: `${props.textColor}`}}>{props.body}</P>
-        </Container>
+        </Content>
       
     );
   }

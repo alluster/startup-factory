@@ -2,7 +2,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 const Container = styled.div`
-    margin: 0;
     position: absolute;            
     top: 50%;                      
     transform: translate(0, -50%);
@@ -10,7 +9,8 @@ const Container = styled.div`
 `
 const IMG = styled.img`
     max-height: 80vh;
-    ailign-self: right
+    margin-left: 90px;
+
 
 
 `
