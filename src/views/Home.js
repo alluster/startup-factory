@@ -9,6 +9,7 @@ import BackgroundImage from '../components/BackgroundImage';
 import TextContainer from '../components/TextContainer';
 import ImageContainer from '../components/ImageContainer';
 import BG from './bg.jpg'
+import Footer from '../components/Footer';
 
 
 
@@ -49,13 +50,16 @@ const ProjectList = array.map( (item, i) => {
 				<IntroContainer>
 					<TextContainer 
 						textColor="white"
-						name="Startup Factory"
-						ingress=" Lean Startup Incubator for both, investors and entrepreneurs."	
+						name="Lean Startup Incubator for both, investors and entrepreneurs."
+						ingress=""	
 						body="We bring together great innovators with bright ideas and investors with decades of experience from the field. "
-					/>
+					>
+					<h2 style={{color: "white" }}>X-Startup Factory by Extreme Consulting </h2>
+
+					</TextContainer>
 				</IntroContainer>
 				{ProjectList}
-			
+			<Footer />
 			</div>
 		
 

@@ -21,12 +21,14 @@ const H4 = styled.h4 `
 `
 
 const P = styled.p `
-    line-height: 24px;
+    line-height: 30px;
+    font-size: 24px;
 `
 
 const TextContainer = (props) =>  {
     return (
         <Container>
+                {props.children}
                 <H1 style={{color: `${props.textColor}`}}>{props.name}</H1>
                 <br/>
                 <H4 style={{color: `${props.textColor}`}}>{props.ingress}</H4>
