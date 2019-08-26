@@ -31,9 +31,9 @@ const Footer = () =>
     <div>
         <FooterContent>
             <Content>
-            <h3>X Startup Factory by Extreme Consulting</h3>
+            <h1>X Startup Factory by Extreme Consulting</h1>
             <br />
-            <h6>We bring together Startups and Investors</h6>
+            <h4>We bring Startups and Investors together</h4>
             <br />
             <p>www.extreme.consulting</p>
 

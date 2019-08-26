@@ -3,24 +3,32 @@ import { getContent } from './../contentful';
 import styled from 'styled-components';
 import Container from '../components/Container';
 import BG from './bg.jpg'
+import MAP from './map.png'
+
 import Footer from '../components/Footer';
 import { Row, Col } from 'react-flexbox-grid';
 import { Parallax } from 'react-scroll-parallax';
 
 
 const ProductImage = styled.img`
-    max-height: 60vh;
+	max-height: 60vh;
+	max-width: 100%;
 	@media (max-width: 700px) {
 	}
 `
 
 const ProjectContainer = styled.div`
-	min-height: 100vh;
+	// min-height: 100vh;
+	padding-top: 100px;
+	padding-bottom: 200px; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	@media (max-width: 700px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 
 `
 
@@ -34,15 +42,24 @@ const ProductImageContainer = styled.div `
 `
 
 const H1 = styled.h1 `
-	font-size: 2.8rem
+	font-size: 3rem
 	line-height: 3.2rem;
 	margin-top: 0.8rem
+	@media (max-width: 700px) {
+		font-size: 2rem;
+		line-height: 2rem;
+
+	}
 `
 
 const H4 = styled.h4 `
 	font-size: 1.3rem
 	line-height: 2rem;
 	margin-top: 0.2rem
+	@media (max-width: 700px) {
+		font-size: 1.2rem
+
+	}
 `
 
 const P = styled.p `
@@ -55,7 +72,6 @@ const TextContainer = styled.div`
 	flex-direction: column;
 	@media (max-width: 991px) {
 		text-align: center;
-		margin-bottom: 50px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -83,7 +99,6 @@ const ProjectList = array.map( (item, i) => {
 							<Col  md={12} lg={6} xl={6} >
 								<TextContainer>
 									<H1 style={{color: `${item.fields.textColor}`}}>{item.fields.name}</H1>
-									<br/>
 									<H4 style={{color: `${item.fields.textColor}`}}>{item.fields.ingress}</H4>
 									<P style={{color: `${item.fields.textColor}`}}>{item.fields.body}</P>
 								</TextContainer>
@@ -106,20 +121,72 @@ const ProjectList = array.map( (item, i) => {
 	return (
 			<div>
 				<ProjectContainer style={{ 
-					backgroundImage: `url(${BG})`,
-					backgroundRepeat: "no-repeat",
-					backgroundSize: "cover"
+						backgroundImage: `url(${BG})`,
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "cover",
+						height: "80vh"
+
 					}}>			
 						<Container>
 							<TextContainer>
 								<h2 style={{color: "white" }}>X Startup Factory by Extreme Consulting </h2>
-								<H1 style={{color: "white"}}>Lean Startup Incubator for both, investors and entrepreneurs.</H1>
-								<br/>
+								<H1 style={{color: "white"}}>Lean Startup Incubator for Investors and Entrepreneurs.</H1>
 								<H4 style={{color: "white"}}>We bring together great innovators with bright ideas and investors with decades of experience from the field. </H4>
 							</TextContainer>
 						</Container>		
 						
 					</ProjectContainer>
+					<ProjectContainer style={{ 
+						backgroundImage: `url()`,
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "cover"
+					}}>			
+						<Container>
+							<TextContainer>
+								<P style={{color: "" }}>About the project</P>
+								<H1 style={{color: ""}}>Startup Ecosystem</H1>
+								<H4 style={{color: ""}}>We aim to build Startup companies that support others in the ecosystem after they have succeeded </H4>
+								<P>By combining a large number of startups under one umberella we enhance the overall success rate of our projects. As one company cannot succeed in short term, other companies will provide support to the newcomers.</P>
+								<P>Startups in our portfolio have been categorized into stages that defive thei maturity and level of support needed. This helps us to provide clear information to all our stakeholders and investors.</P>
+								<Row>
+									<Col  md={12} lg={4} xl={4} >	
+									<H4>Stage 1</H4>
+
+										<ul>
+											<li>Potential profitability is theoretical</li>
+											<li>Investors familiarized but not yet onboard</li>
+											<li>Product MVP launched </li>
+
+										</ul>
+									</Col>
+									<Col  md={12} lg={4} xl={4} >	
+
+									<H4>Stage 2</H4>
+								<ul>
+									<li>Potential profitability in the next 3 years</li>
+									<li>First round investment collected and team gathered</li>
+									<li>Final product development plan ready</li>
+
+								</ul>
+								</Col>
+								<Col  md={12} lg={4} xl={4} >	
+
+									<H4>Stage 3</H4>
+								<ul>
+									<li>Company financed and can produce capital to support stage 1 companies</li>
+									<li>Successful Investement rounds have been conducted</li>
+									<li>Successful product launch and atractive offering achieved</li>
+
+								</ul>
+								</Col>
+								</Row>
+								<P>We are currently looking for new investors to join our incubator. We are welcoming both private and supportive financial investment can offer equity based returning offers. Bellow you can view our current startup portfolio. 
+									For more information please send email to tommi.heinonen@extreme.consulting. </P>							</TextContainer>
+							
+						</Container>		
+						
+					</ProjectContainer>
+				
 					{ProjectList}
 				<Footer />
 			</div>

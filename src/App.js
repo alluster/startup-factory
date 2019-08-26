@@ -8,6 +8,14 @@ const GlobalStyle = createGlobalStyle`
 	margin: 0px !important;
 	font-family: montserrat;
 	root: 18px;
+  };
+  ul {
+	list-style-position: inside;
+	padding: 0
+  }
+  li {
+	  font-size: 0.8rem
+	  margin: 0
   }
 `
 
