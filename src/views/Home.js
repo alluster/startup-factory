@@ -143,11 +143,11 @@ const ProjectList = array.map( (item, i) => {
 					}}>			
 						<Container>
 							<TextContainer>
-								<P style={{color: "" }}>About the project</P>
+								{/* <P style={{color: "" }}>About the project</P> */}
 								<H1 style={{color: ""}}>Startup Ecosystem</H1>
 								<H4 style={{color: ""}}>We aim to build Startup companies that support others in the ecosystem after they have succeeded </H4>
-								<P>By combining a large number of startups under one umbrella we enhance the overall success rate of our projects. As one company cannot succeed in short term, other companies will provide support to the newcomers.</P>
-								<P>Startups in our portfolio have been categorized into stages that define their maturity and level of support needed. This helps us to provide clear information to all our stakeholders and investors.</P>
+								<P>By combining a large number of startups under one umbrella we enhance the overall success rate of our projects. As one company cannot succeed in short term thus the success stories in our portfolio will provide support to the newcomers and organically will grow the ecosystem. Startups in our portfolio have been categorized into stages that define their maturity and level of support needed. This helps us to provide clear information to all our stakeholders and investors.
+								</P>
 								<Row>
 									<Col  md={12} lg={4} xl={4} >	
 									<H4>Stage 1</H4>
@@ -180,9 +180,10 @@ const ProjectList = array.map( (item, i) => {
 								</ul>
 								</Col>
 								</Row>
-								<P>We are currently looking for new investors to join our incubator. We are welcoming both private and supportive financial investment can offer equity based returning offers. Bellow you can view our current startup portfolio. 
+								<P>We are currently looking for new investors to join our incubator welcoming both private and supportive financial investment. We will offer equity based returning offers. Bellow you can view our current startup portfolio. 
 									For more information please send email to tommi.heinonen@extreme.consulting. </P>							</TextContainer>
-							
+								<H4>Extreme Consulting Ltd</H4>
+								<P>A Digital Service Agency focusing in digital business solutions for a vide range of customer companies. We enable our partners to discover new digital business and fine-tune and automate existing services with Design and Technology combined.</P>
 						</Container>		
 						
 					</ProjectContainer>
