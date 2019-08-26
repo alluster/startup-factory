@@ -146,8 +146,8 @@ const ProjectList = array.map( (item, i) => {
 								<P style={{color: "" }}>About the project</P>
 								<H1 style={{color: ""}}>Startup Ecosystem</H1>
 								<H4 style={{color: ""}}>We aim to build Startup companies that support others in the ecosystem after they have succeeded </H4>
-								<P>By combining a large number of startups under one umberella we enhance the overall success rate of our projects. As one company cannot succeed in short term, other companies will provide support to the newcomers.</P>
-								<P>Startups in our portfolio have been categorized into stages that defive thei maturity and level of support needed. This helps us to provide clear information to all our stakeholders and investors.</P>
+								<P>By combining a large number of startups under one umbrella we enhance the overall success rate of our projects. As one company cannot succeed in short term, other companies will provide support to the newcomers.</P>
+								<P>Startups in our portfolio have been categorized into stages that define their maturity and level of support needed. This helps us to provide clear information to all our stakeholders and investors.</P>
 								<Row>
 									<Col  md={12} lg={4} xl={4} >	
 									<H4>Stage 1</H4>
@@ -174,8 +174,8 @@ const ProjectList = array.map( (item, i) => {
 									<H4>Stage 3</H4>
 								<ul>
 									<li>Company financed and can produce capital to support stage 1 companies</li>
-									<li>Successful Investement rounds have been conducted</li>
-									<li>Successful product launch and atractive offering achieved</li>
+									<li>Successful investment rounds have been conducted</li>
+									<li>Successful product launch and attractive offering achieved</li>
 
 								</ul>
 								</Col>
