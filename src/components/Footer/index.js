@@ -11,7 +11,6 @@ const FooterContent = styled.div`
     width: 100%;
     height: 800px;
     @media (max-width: 700px) {
-       margin-top: 50px;
        height: 600px;
 
     }
@@ -32,7 +31,7 @@ const Footer = () =>
     <div>
         <FooterContent>
             <Content>
-            <h3>X-Startup Factory by Extreme Consulting</h3>
+            <h3>X Startup Factory by Extreme Consulting</h3>
             <br />
             <h6>We bring together Startups and Investors</h6>
             <br />

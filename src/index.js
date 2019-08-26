@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/css/bootstrap.min.css';
-import './styles/custom.css'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ParallaxProvider } from 'react-scroll-parallax';
